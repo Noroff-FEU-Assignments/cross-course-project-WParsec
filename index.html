@@ -13,6 +13,14 @@
                 <li>
                     <label for="hamburger-menu" class="hamburger-img"><img src="/images/hamburger.svg" alt=""></label>
                     <input type="checkbox" name="hamburger-menu" id="hamburger-menu">
+                    <nav class="dropdown-menu">
+                        <ul>
+                            <li class="nav-menu-item"><a href="#">Home</a></li>
+                            <li class="nav-menu-item"><a href="#">Categories</a></li>
+                            <li class="nav-menu-item"><a href="#">Account</a></li>
+                            <li class="nav-menu-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
                 </li>
                 <li><a href="#"><img src="/images/logo-img.svg" alt=""></a></li>
                 <li><a href="#"><img src="/images/profile-icon.svg" alt=""></a></li>
@@ -23,34 +31,35 @@
             <input type="search" name="searchbar" class="searchbar" placeholder="Browse the universe">
         </div>
         
-        <nav class="dropdown-menu">
-            <ul>
-                <li class="home"><a href="#">Home</a></li>
-                <li class="categories"><a href="#">Categories</a></li>
-            </ul>
-        </nav>
+        
     </header>
 
     <main>
-        <section class="hero-image">
-            <h1 class="hero-text">The universe of games</h1>
-        </section>
+        <div class="background-img">
+            <section class="hero-image">
+                <h1 class="hero-text">The universe of games</h1>
+            </section>
 
-        <section class="category-section">
-            <input type="checkbox" name="category-menu" id="category-menu">
-            <label for="category-menu" class="category-menu"><img src="/images/hamburger-icon2.svg" alt=""><span>Categories</span></label>
-        </section>
+            <div class="category-section">
+                <label for="category-menu" class="category-menu"><img src="/images/hamburger-icon2.svg" alt=""><span>Categories</span></label>
+                <input type="checkbox" name="category-menu" id="category-menu">
 
-        <section class="main-wrapper">
-        <nav class="category-list">
-            <ul class="category-items">
-                <li class="category-li-item">Condition</li>
-                <li class="category-li-item">Price</li>
-                <li class="category-li-item">All genres</li>
-                <li class="category-li-item">All consoles</li>
-            </ul>
-        </nav>
-    </section>
+                <nav class="category-list">
+                    <ul class="category-items">
+                        <li class="category-li-item">Condition</li>
+                        <li class="category-li-item">Price</li>
+                        <li class="category-li-item">All genres</li>
+                        <li class="category-li-item">All consoles</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <section class="grid-container">
+                <div class="column column-1"></div>
+                <div class="column column-2"></div>
+                <div class="column column-3"></div>
+        </section>
+    </div>
 
     </main>
 

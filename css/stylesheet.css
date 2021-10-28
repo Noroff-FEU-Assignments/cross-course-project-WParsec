@@ -88,14 +88,44 @@ li {
 
 #hamburger-menu {
     display: none;
+    position: sticky;
 }
 
 .dropdown-menu {
     display: none;
+    padding-top: 65px;
+    max-width: 500px;
+    filter: drop-shadow(0px 0px 20px black);
+    z-index: 100;
 }
 
-#hamburger-menu:checked > .dropdown-menu {
+.dropdown-menu a {
+    padding: 20px;
+    width: 100%;
+    margin: 0px auto 8px auto;
+    background-color: #181A21;
+    color: #0ED6D6;
+    text-decoration: none;
+}
+
+
+.dropdown-menu a:hover {
+    background-color: #0ed6d63f;
+}
+
+.dropdown-menu a:active {
+    background-color: rgba(0, 255, 255, 0.5);
+}
+
+.nav-menu-item {
+    z-index: 100;
+}
+
+#hamburger-menu:checked + .dropdown-menu {
     display: block;
+    position: absolute;
+    background-color: #000812;
+    width: 80%;
 }
 
 
@@ -122,6 +152,23 @@ li {
     margin-right: auto;
 }
 
+
+/* Main */
+
+main {
+    background-color: black;
+    position: sticky;
+}
+
+
+.background-img {
+    background-image: url(/images/background-img.svg);
+    position: relative;
+    z-index: -99;
+}
+
+
+
 /* Category menu - checkbox method */
 
 #category-menu {
@@ -130,9 +177,9 @@ li {
 
 .category-section {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     border-radius: 20px;
+
 }
 
 .category-menu {
@@ -146,19 +193,29 @@ li {
     text-align: center;
     padding: 20px;
     filter: drop-shadow(0px 0px 20px black);
-    z-index: 2;
+    z-index: 0;
+}
+
+.category-list {
+    background-color: #000812;
+    margin-top: 56px;
+    display: block;
+    color: #0ED6D6;
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    z-index: -1;
+    filter: drop-shadow(0px 0px 20px black);
+}
+
+.category-items {
+    display: flex;
+    flex-direction: column;
 }
 
 span {
     margin: auto;
     padding-right: 45px;
-}
-
-.category-list {
-    background-color: #000812;
-    margin: auto;
-    display: block;
-    color: #0ED6D6;
 }
 
 .category-li-item {
@@ -169,15 +226,21 @@ span {
 
 }
 
-.main-wrapper {
+.grid-container {
     width: 100%;
-    z-index: 1;
+    z-index: -2;
     max-width: 1246px;
     background-color: #212121;
     margin: auto;
     position: relative;
     top: -56px;
     height: 1000px;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 20px 5px black;
+}
+
+.column {
+    background-color: white;
 }
 
 /* Category nav */
@@ -186,9 +249,11 @@ span {
     display: none;
 }
 
-#category-menu:checked ~ .category-list {
+#category-menu:checked + .category-list {
     display: block;
 }
+
+
 
 
 
