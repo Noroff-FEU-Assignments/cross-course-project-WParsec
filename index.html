@@ -9,23 +9,30 @@
 </head>
 <body>
     <header>
-            <ul class="navbar-ul">
-                <li>
-                    <label for="hamburger-menu" class="hamburger-img"><img src="/images/hamburger.svg" alt=""></label>
-                    <input type="checkbox" name="hamburger-menu" id="hamburger-menu">
-                    <nav class="dropdown-menu">
-                        <ul>
-                            <li class="nav-menu-item"><a href="#">Home</a></li>
-                            <li class="nav-menu-item"><a href="#">Categories</a></li>
-                            <li class="nav-menu-item"><a href="#">Account</a></li>
-                            <li class="nav-menu-item"><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </li>
-                <li><a href="#"><img src="/images/logo-img.svg" alt=""></a></li>
-                <li><a href="#"><img src="/images/profile-icon.svg" alt=""></a></li>
-                <li><a href="#"><img src="/images/cart-icon.svg" alt=""></a></li>
-            </ul>
+            <div class="navbar-ul">
+                <div class="left-nav">
+                    <div>
+                        <div class="header-navbar-item header-navbar-item-1">
+                            <label for="hamburger-menu" class="hamburger-img"><img src="/images/hamburger.svg" alt=""></label>
+                            <input type="checkbox" name="hamburger-menu" id="hamburger-menu">
+                            <nav class="dropdown-menu">
+                                <ul>
+                                    <li class="nav-menu-item"><a href="#">Home</a></li>
+                                    <li class="nav-menu-item"><a href="#">Categories</a></li>
+                                    <li class="nav-menu-item"><a href="#">Account</a></li>
+                                    <li class="nav-menu-item"><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                    <div class="header-navbar-item"><a href="#"><img src="/images/logo-img.svg" alt=""></a></div>
+                </div>
+                <div class="right-nav">
+                    <div class="header-navbar-item"><a href="#"><img src="/images/profile-icon.svg" alt=""></a></div>
+                    <div class="header-navbar-item header-navbar-item-2"><a href="#"><img src="/images/cart-icon.svg" alt=""></a></div>
+                </div>
+            </div>
 
         <div class="container-searchbar">
             <input type="search" name="searchbar" class="searchbar" placeholder="Browse the universe">

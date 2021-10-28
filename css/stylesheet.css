@@ -29,7 +29,7 @@ ul {
 /* Header */
 
 header {
-    height: 150px;
+    height: 100px;
     background-color: #000812;
     align-content: center;
     padding-top: 20px;
@@ -38,7 +38,7 @@ header {
 
 .navbar-ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     max-width: 1246px;
     margin: auto;
@@ -47,6 +47,26 @@ header {
 .navbar-ul a {
     display: inline-block;
     padding: 5px; /* For easier clicking */
+}
+
+.left-nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 50px;
+}
+
+.header-navbar-item-1 {
+    margin-right: 50px;
+}
+
+.header-navbar-item-2 {
+    margin-left: 50px;
 }
 
 li {
@@ -65,7 +85,7 @@ li {
     height: 40px;
     margin: auto;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 450px;
 }
 
 ::placeholder {
@@ -267,3 +287,36 @@ span {
         border-radius: 25px;
      }
     }
+
+@media (min-width: 1246px) {
+    .left-nav {
+           margin-left: 0px;
+    }
+
+    .right-nav {
+            margin-right: 0px;
+     }
+    }
+
+@media (min-width: 1000px) {
+    .container-searchbar {
+        margin: auto;
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        height: 150px;
+    }
+
+    .navbar-ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-navbar-item-1 .header-navbar-item-2 .left-nav .right-nav {
+        padding: 0px;
+        margin: 0px;
+    }
+}
