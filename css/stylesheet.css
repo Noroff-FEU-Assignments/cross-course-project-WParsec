@@ -84,7 +84,7 @@ li {
     width: 80%;
     height: 40px;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 20px;
     max-width: 450px;
 }
 
@@ -185,6 +185,7 @@ main {
     background-image: url(/images/background-img.svg);
     position: relative;
     z-index: -99;
+    background-repeat: no-repeat;
 }
 
 
@@ -273,7 +274,29 @@ span {
     display: block;
 }
 
+/* Main grid */
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px auto;
+    padding-top: 56px;
+}
+
+.grid-item {
+    border: black 1px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-item a {
+    display: flex;
+    justify-content: center;
+}
+
+.cover-img {
+    max-width: 200px;
+}
 
 
 
@@ -320,3 +343,10 @@ span {
         margin: 0px;
     }
 }
+
+/* Grid rows */
+
+@media (max-width: 850px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
