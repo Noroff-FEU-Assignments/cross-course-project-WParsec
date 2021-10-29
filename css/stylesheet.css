@@ -10,6 +10,11 @@ h1 {
     font-size: 24px;
 }
 
+p {
+    font-family: 'Montserrat';
+    color: white;
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -255,7 +260,7 @@ span {
     margin: auto;
     position: relative;
     top: -56px;
-    height: 1000px;
+    height: fit-content;
     border-radius: 25px;
     box-shadow: inset 0px 0px 20px 5px black;
 }
@@ -279,23 +284,32 @@ span {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0px auto;
-    padding-top: 56px;
-}
-
-.grid-item {
-    border: black 1px solid;
-    display: flex;
+    padding: 76px 40px;
     justify-content: center;
 }
 
+.grid-item {
+    display: block;
+    margin: auto;
+}
+
 .grid-item a {
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
 .cover-img {
+    width: 100%;
     max-width: 200px;
+}
+
+.stars {
+    padding-left: 15px;
+}
+
+.grid-item p {
+    padding: 5px 0px 0px 16px;
+    margin-bottom: 10px;
 }
 
 
