@@ -13,6 +13,7 @@ h1 {
 p {
     font-family: 'Montserrat';
     color: white;
+    font-weight: lighter;
 }
 
 * {
@@ -265,9 +266,7 @@ span {
     box-shadow: inset 0px 0px 20px 5px black;
 }
 
-.column {
-    background-color: white;
-}
+
 
 /* Category nav */
 
@@ -284,7 +283,7 @@ span {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 76px 40px;
+    padding: 76px 40px 110px;
     justify-content: center;
 }
 
@@ -312,10 +311,145 @@ span {
     margin-bottom: 10px;
 }
 
+/* Reviews section */
+
+.reviews-section {
+    min-height: 439px;
+    max-height: 736px;
+    width: 100%;
+    background-color: #2A2A2B;
+    border-radius: 25px;
+    max-width: 1246px;
+    margin: -80px auto 0px auto;
+    box-shadow: 0px 0px 20px 10px black;
+    display: flex;
+    position: relative;
+}
+
+.reviews-container {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'customer-service customer-service'
+    'review-1 review-2';
+}
+
+.customer-service {
+    grid-area: customer-service;
+    min-height: 95px;
+    background-color: #000812;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    padding-top: 1em;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+.customer-service h1 {
+    text-align: center;
+    color: #F2D027;
+    padding-bottom: 8px;
+}
+
+.customer-service p {
+    text-align: center;
+    color: #F2D027;
+}
+
+/* Reviews */
+
+.review-1 {
+    grid-area: review-1 ;
+    background-color: #000812;
+    min-height: 176px;
+    min-width: 136px;
+    margin-right: 1.5em;
+    border-radius: 16px;
+    filter: drop-shadow(0px 0px 5px black);
+    padding: 20px;
+    text-align: center;
+}
+
+.review-stars {
+    display: block;
+    min-height: 10px;
+    height: 100%;
+    max-height: 12px;
+    margin: 4px auto 4px;
+}
+
+.review-pic {
+    display: block;
+    margin: auto;
+    width: 50%;
+    max-width: 100px;
+    border-radius: 50%;
+
+}
+
+.review-2 {
+    grid-area: review-2;
+    background-color: #000812;
+    min-height: 176px;
+    min-width: 136px;
+    margin-left: 1.5em;
+    border-radius: 16px;
+    filter: drop-shadow(0px 0px 5px black);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* Game of the year */
+
+.game-of-the-year {
+    background-color: #212121;
+    margin: -20px auto;
+    padding-top: 120px;
+    text-align: center;
+    max-width: 1246px;
+    z-index: -1;
+}
+
+.assassin a img{
+    max-width: 317px;
+    margin: auto auto 80px auto;
+}
+
+.assassin img:hover {
+    border: cyan solid 2px;
+}
+
+.game-of-the-year h1 {
+    margin-bottom: 24px;
+    color: #F2D027;
+}
 
 
+/* Footer */
 
+.footer {
+    height: 240px;
+    max-width: 1246px;
+    border-radius: 25px 25px 0 0;
+    background-color: #2A2A2B;
+    padding: 40px;
+    position: relative;
+    margin: auto;
+    filter: drop-shadow(0px 0px 20px black);
+}
 
+.footer a {
+    font-family: 'Montserrat';
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+}
 
 
 
