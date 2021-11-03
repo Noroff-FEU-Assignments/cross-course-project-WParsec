@@ -209,7 +209,9 @@ main {
 
 .category-list {
     display: none;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    margin: auto;
 }
 
 #category-menu:checked + .category-list {
@@ -560,3 +562,4 @@ footer {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
     }
+}

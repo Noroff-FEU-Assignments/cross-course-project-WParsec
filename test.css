@@ -71,7 +71,9 @@ p, li, label{
 
 .category-list {
     display: none;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    margin: auto;
 }
 
 #category-menu:checked + .category-list {
