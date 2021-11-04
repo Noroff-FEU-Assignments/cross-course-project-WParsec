@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'nulshock';
+    src: url(../fonts/nulshock\ bd.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+h1, h2 {
+    font-family: 'nulshock';
+    font-size: 24px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+li, label{
+    font-family: 'Montserrat';
+    color: ;
+    font-weight: lighter;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav-header {
+    height: fit-content;
+    background-color: #000812;
+    width: 100%;
+    padding: 10px;
+}
+
+.nav-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1266px;
+    margin: auto;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.account-icon {
+    order: 4;
+}
+
+.cart-icon {
+    order: 5;
+}
+
+#search {
+    order: 4;
+    width: 35%;
+    text-align: center;
+    height: 30px;
+}
+
+.wrap-hamburger-nav {
+    position: relative;
+    order: 1;
+}
+
+.logo-wrap {
+    order: 2;
+}
+
+.hamburger-nav {
+    display: none;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+
+
+
+@media (max-width: 600px) {
+    #search {
+        order: 6;
+        width: 100%;
+        margin: 10px auto 10px;
+         
+    }
+}

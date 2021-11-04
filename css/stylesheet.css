@@ -14,7 +14,7 @@
     padding: 0px;
 }
 
-h1 {
+h1 h2 {
     font-family: 'nulshock', Arial, sans-serif;
     color: white;
     font-size: 24px;
@@ -114,11 +114,12 @@ header {
     margin: 2px 0 2px 0;
     background-color: #0ed6d607;
     border-radius: 25px;
-}
-
-.hamburger-nav a {
     display: block;
     padding: 30px 0px 30px 0px;
+}
+
+.hamburger-nav a:hover {
+    background-color: #0ed6d62f;
 }
 
 /* Hamburger menu */
@@ -159,10 +160,11 @@ main {
 
 
 .background-img {
-    background-image: url(/images/background-img.svg);
+    background-image: url(/images/background-img.jpg);
     position: relative;
     z-index: -99;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -400,6 +402,7 @@ main {
     grid-template-areas: 
     'customer-service customer-service'
     'review-1 review-2';
+    grid-gap: 1.5em;
 }
 
 .customer-service {
@@ -407,7 +410,6 @@ main {
     min-height: 95px;
     background-color: #000812;
     border-radius: 25px;
-    margin-bottom: 40px;
     padding-top: 1em;
     filter: drop-shadow(0px 0px 5px black);
 }
@@ -430,7 +432,6 @@ main {
     background-color: #000812;
     min-height: 176px;
     min-width: 136px;
-    margin-right: 1.5em;
     border-radius: 16px;
     filter: drop-shadow(0px 0px 5px black);
     padding: 20px;
@@ -459,7 +460,7 @@ main {
     background-color: #000812;
     min-height: 176px;
     min-width: 136px;
-    margin-left: 1.5em;
+    max-width: 400px;
     border-radius: 16px;
     filter: drop-shadow(0px 0px 5px black);
     padding: 20px;
@@ -518,16 +519,29 @@ footer {
 }
 
 
+@media (min-width: 1246px) {
+     .category-menu {
+        border-radius: 25px;
+     }
+    }
+
+
 @media (max-width: 1000px) {
     #search {
-        order: 5;
-        margin: 20px auto;
-        min-width: 600px;
+            order: 5;
+            margin: 20px auto;
+            min-width: 600px;
+     }
     }
-   }
+    
 
+@media (max-width: 1000px) {
+    header {
+        height: 150px;
+    }
+}
 
-   @media (max-width: 650px) {
+@media (max-width: 650px) {
     #search {
         order: 5;
         margin: 20px auto;
@@ -540,26 +554,14 @@ footer {
     .nav-wrap label {
         padding: 0px;
     }
-   }
+}
 
-
-@media (min-width: 1246px) {
-     .category-menu {
-        border-radius: 25px;
-     }
-    }
-
-
-@media (max-width: 1000px) {
-    header {
-        height: 150px;
-    }
-
-
-/* Grid rows */
+/* GRID ROWS */
 
 @media (max-width: 850px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
