@@ -30,6 +30,11 @@ li, label, a {
     text-decoration: none;
 }
 
+button {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
 ::placeholder {
     font-family: 'Montserrat';
 }
@@ -186,9 +191,16 @@ li, label, a {
     max-height: 200px;
     margin: auto;
     border-radius: 20px;
-    
 }
 
+.submit-button {
+    padding: 16px 120px;
+    margin: 40px auto;
+    display: flex;
+    color: #D95F23;
+    background-color: #d960237a;
+    border-radius: 20px;
+}
 
 
 
