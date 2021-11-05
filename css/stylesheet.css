@@ -14,7 +14,7 @@
     padding: 0px;
 }
 
-h1 h2 {
+h1, h2 {
     font-family: 'nulshock', Arial, sans-serif;
     color: white;
     font-size: 24px;
@@ -121,17 +121,6 @@ header {
 .hamburger-nav a:hover {
     background-color: #0ed6d62f;
 }
-
-/* Hamburger menu */
-
-
-
-
-/* Logo */
-
-
-
-/* Cart icon */
 
 
 /* Main section */

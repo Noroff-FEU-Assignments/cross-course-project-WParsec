@@ -11,6 +11,8 @@
 h1, h2 {
     font-family: 'nulshock';
     font-size: 24px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 * {
@@ -19,13 +21,20 @@ h1, h2 {
     padding: 0px;
 }
 
-li, label{
+li, label, a {
     font-family: 'Montserrat';
-    color: ;
+    color: white;
     font-weight: lighter;
     list-style: none;
     text-transform: uppercase;
+    text-decoration: none;
 }
+
+::placeholder {
+    font-family: 'Montserrat';
+}
+
+/* HEADER */
 
 .nav-header {
     height: fit-content;
@@ -46,21 +55,30 @@ li, label{
 
 .account-icon {
     order: 4;
+    margin-left: 20px;
+}
+
+.account-icon img, .cart-icon img {
+    padding: 10px 10px;
 }
 
 .cart-icon {
     order: 5;
+    margin-right: 10px;
+
 }
 
 #search {
     order: 4;
-    width: 35%;
+    width: 45%;
     text-align: center;
-    height: 30px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: -5px;
 }
 
 .wrap-hamburger-nav {
-    position: relative;
+    position: stick;
     order: 1;
 }
 
@@ -70,16 +88,113 @@ li, label{
 
 .hamburger-nav {
     display: none;
+    position: absolute;
+    background-color: #000812;
+    width: 60%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    border: solid 1px cyan;
+}
+
+.hamburger-nav a {
+    display: block;
+    width: 100%;
+    padding: 24px 0px;
+    border-radius: 20px;
+}
+
+.hamburger-nav a:hover {
+    background-color: rgba(0, 255, 255, 0.144);
 }
 
 #hamburger-menu {
     display: none;
 }
 
+#hamburger-menu:checked + .hamburger-nav {
+    display: block;
+}
+
+/* HEADER SECTION */
+
+.hero-image {
+    background-image: url(/images/hero-img1.jpg);
+    background-color: black;
+    height: 100px;
+    text-align: center;
+}
+
+.black-opacity {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding-top: 33px;
+}
+
+/* MAIN */
+
+.background-img {
+    background-image: url(/images/background-img.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.main-container {
+    position: relative;
+    margin: auto;
+    background-color: #212121;
+    max-width: 1246px;
+    border-radius: 25px;
+    height: 800px;
+    filter: drop-shadow(inset 0px 0px 50px black);
+}
+
+.text-section {
+    text-align: center;
+    color: white;
+    padding: 80px 0px 40px;
+}
+
+.text-section p {
+    font-family: 'Montserrat';
+    padding: 20px 0px 0px;
+    display: inline-block;
+}
+
+.form-section {
+    display: block;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.info-input {
+    display: block;
+    margin: 24px auto;
+    height: 48px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#textarea {
+    resize: none;
+    display: block;
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    margin: auto;
+    border-radius: 20px;
+    
+}
 
 
 
-@media (max-width: 600px) {
+
+/* MEDIA QUERIES */
+
+@media (max-width: 700px) {
     #search {
         order: 6;
         width: 100%;
