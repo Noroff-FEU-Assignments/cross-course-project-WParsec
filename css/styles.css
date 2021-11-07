@@ -1,0 +1,67 @@
+@import url(/css/imports/links.css);
+@import url(/css/imports/variables.css);
+
+
+@font-face {
+    font-family: 'nulshock';
+    src: url(../fonts/nulshock\ bd.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body {
+    min-height: 1vh;
+}
+
+h1, h2, h3 {
+    font-family: 'nulshock';
+    font-size: 24px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+::placeholder {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
+li, label {
+    font-family: 'Montserrat';
+    color: white;
+    font-weight: lighter;
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+button {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
+.background-img {
+    background: url(/images/background-img.jpg);
+    background-size: 100%;
+    position: relative;
+    z-index: -2;
+    background-repeat: no-repeat;
+}
+
+
+.hero-image {
+    background-image: url(/images/hero-img1.jpg);
+    background-color: black;
+    height: 100px;
+    text-align: center;
+}
+
+.black-opacity {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding-top: 33px;
+}
+

@@ -4,39 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamehub - The universe of games - Home</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Gamehub | The universe of games | Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
+    <header class="nav-header">
         <div class="nav-wrap">
-            <div class="sticky-nav">
+            <div class="wrap-hamburger-nav">
                 <label for="hamburger-menu"><img src="/images/hamburger.svg" alt="hamburger"></label>
                 <input type="checkbox" name="hamburger-menu" id="hamburger-menu">
                     <nav class="hamburger-nav">
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="#">Categories</a></li>
                             <li><a href="#">Account</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li class="bottom-li"><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
             </div>
-                <a class="logo" href="#"><img src="/images/logo-img.svg" alt="Gamehub logo"></a>
-                <input type="search" name="search" id="search" placeholder="Browse the universe">
-                <div class="profile-icon">
-                    <a href="#"><img src="/images/profile-icon.svg" alt="profile-icon"></a>
+            <div class="logo-wrap">¨
+                <a href="/index.html"><img src="/images/logo-img.svg" alt="Logo"></a>
             </div>
-            <div class="cart-icon">
-                <a href="#"><img src="/images/cart-icon.svg" alt="cart-icon"></a>
-            </div>           
+            <input type="search" name="search" id="search" placeholder="Browse the universe">
+                <div class="account-icon"><a href="#"><img src="/images/profile-icon.svg" alt="Account icon"></a>
+                </div>
+                <div class="cart-icon"><a href="#"><img src="/images/cart-icon.svg" alt="Cart icon"></a>
+                </div>
         </div>
+    </header>
+    <header>
+        <section class="hero-image">
+            <div class="black-opacity">
+                <h1>The universe of games</h1>
+            </div>
+        </section>
     </header>
     <main>
         <div class="background-img">
-            <section class="hero-image">
-                <h1 class="hero-text">The universe of games</h1>
-            </section>
             <div class="category-section">
                 <label for="category-menu" class="category-menu"><img src="/images/hamburger-icon2.svg" alt=""><span>Categories</span></label>
                 <input type="checkbox" name="category-menu" id="category-menu">
@@ -102,7 +107,7 @@
             </section>
             <section class="reviews-section">
                 <div class="reviews-container">
-                    <div class="customer-service"><h1>Award winning</h1><p>customer service</p></div>
+                    <div class="customer-service"><h3>Award winning</h3><p>customer service</p></div>
                     <div class="review-1">
                         <img src="/images/review-pic-1.svg" alt="picture of person" class="review-pic"> 
                         <img src="/images/5-stars.svg" alt="five stars" class="review-stars">
@@ -116,11 +121,12 @@
                 </div>
             </section>
             <section class="game-of-the-year">
-                <h1>Game of the year</h1>
+                <h2>Game of the year</h2>
                 <div class="assassin">
                     <a href="#"><img src="/images/cover-2.svg" alt="Game called Assassin"></a>
                 </div>
             </section>
+        </div>
     </main>
         </div>    
             <footer>
