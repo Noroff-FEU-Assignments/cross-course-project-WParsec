@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: cyan;
+}

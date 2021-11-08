@@ -1,40 +1,10 @@
-@font-face {
-    font-family: 'nulshock';
-    src: url(../fonts/nulshock\ bd.ttf);
-}
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/Montserrat-Regular.ttf);
-}
-
-h1, h2 {
-    font-family: 'nulshock';
-    font-size: 24px;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-
-a {
-    font-family: 'Montserrat';
-    color: white;
-    font-weight: lighter;
-    list-style: none;
-    text-decoration: none;
-}
 
 /* HEADER */
 
 .nav-header {
     height: fit-content;
     background-color: #000812;
-    width: 100%;
     padding: 10px;
 }
 
@@ -111,44 +81,54 @@ a {
     display: block;
 }
 
-
 /* MAIN */
 
 .background-img {
     padding-bottom: 80px;
 }
 
-.main-container {
-    position: relative;
+.content-container {
+    width: 100%;
+    max-width: 1246px;
     margin: auto;
     background-color: #212121;
-    max-width: 1246px;
     border-radius: 30px;
     height: 900px;
-    box-shadow: inset 0px 0px 20px 5px black;
-}
-
-.text-section {
     text-align: center;
-    color: white;
-    padding: 80px 10px 40px;
 }
 
-.text-section p {
-    font-family: 'Montserrat';
-    padding: 20px 0px 0px;
-    display: inline-block;
+.breadcrumbs-login {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    background-color: #2A2A2B;
+    height: fit-content;
+    border-radius: 30px 16px 16px 0px;
+    padding: 1em;
+    justify-content: space-around;
+    align-items: cente;
 }
 
-.form-section {
-    display: block;
+.breadcrumbs-login a {
+    color: cyan;
+    margin: 0px;
+    margin: 10px;
+}
+
+.content-container h1 {
+    padding: 80px 0px 40px;
+}
+
+.input-wrap {
+    display: flex;
     flex-direction: column;
-    margin: auto;
     width: 90%;
     max-width: 600px;
+    margin: auto;
 }
 
-.info-input {
+#email, #password {
     display: block;
     margin: 24px auto;
     height: 48px;
@@ -157,32 +137,6 @@ a {
     box-shadow: inset 0px 0px 5px 2px black;
 }
 
-#textarea {
-    resize: none;
-    display: block;
-    width: 100%;
-    height: 200px;
-    max-height: 200px;
-    margin: auto;
-    border-radius: 20px;
-    box-shadow: inset 0px 0px 5px 2px black;
-}
-
-.form-section ::placeholder {
-    padding: 10px 30px 0px;
-}
-
-.submit-button {
-    padding: 16px 120px;
-    margin: 40px auto;
-    display: flex;
-    color: #D95F23;
-    background-color: #d960237a;
-    border-radius: 20px;
-}
-
-
-
 /* MEDIA QUERIES */
 
 @media (max-width: 700px) {
@@ -190,6 +144,14 @@ a {
         order: 6;
         width: 100%;
         margin: 10px auto 10px;
+         
+    }
+}
+
+
+@media (max-width: 350px) {
+    .account-icon, .cart-icon {
+        margin: 0px;
          
     }
 }

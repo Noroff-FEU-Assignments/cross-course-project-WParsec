@@ -12,6 +12,11 @@
     src: url(../fonts/Montserrat-Regular.ttf);
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     min-height: 1vh;
 }
@@ -44,7 +49,7 @@ button {
 
 .background-img {
     background: url(/images/background-img.jpg);
-    background-size: 100%;
+    background-size: cover;
     position: relative;
     z-index: -2;
     background-repeat: no-repeat;
@@ -62,6 +67,9 @@ button {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.212);
+}
+
+.black-opacity h2 {
     padding-top: 33px;
 }
 
