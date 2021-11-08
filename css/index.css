@@ -75,7 +75,6 @@ a {
 }
 
 .wrap-hamburger-nav {
-    position: stick;
     order: 1;
 }
 
@@ -126,15 +125,17 @@ a {
     text-align: center;
 }
 
-.hero-text {
-    margin: auto;
+.black-opacity h1 {
+    padding-top: 33px;
 }
-
-/* Main */
 
 main {
     background-color: black;
     position: sticky;
+}
+
+.background-img {
+    background-size: 100%;
 }
 
 
@@ -143,8 +144,6 @@ main {
 .category-section {
     text-align: center;
     align-items: center;
-    position: relative;
-    z-index: -2;
 }
 
 .category-section img {
@@ -246,6 +245,13 @@ main {
         display: none;
     }
 
+}
+
+@media (max-width: 350px) {
+    .account-icon, .cart-icon {
+        margin: 0px;
+         
+    }
 }
 
     /* Category menu flex */
