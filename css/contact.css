@@ -90,6 +90,7 @@ a {
     text-align: center;
     border-radius: 20px;
     border: solid 1px cyan;
+    z-index: 100;
 }
 
 .hamburger-nav a {
@@ -114,8 +115,14 @@ a {
 
 /* MAIN */
 
-.background-img {
-    padding-bottom: 80px;
+main {
+    background-image: url(/images/background-img.jpg);
+    background-size: 100%;
+    background-position-y: 100px;
+    background-repeat: repeat;
+    background-position: relative;
+    z-index: -100;
+    background-attachment: fixed;
 }
 
 .main-container {

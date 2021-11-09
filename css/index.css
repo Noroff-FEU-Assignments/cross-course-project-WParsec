@@ -91,6 +91,7 @@ a {
     text-align: center;
     border-radius: 20px;
     border: solid 1px cyan;
+    z-index: 100;
 }
 
 .hamburger-nav a {
@@ -130,12 +131,13 @@ a {
 }
 
 main {
-    background-color: black;
-    position: sticky;
-}
-
-.background-img {
+    background-image: url(/images/background-img.jpg);
     background-size: 100%;
+    background-position-y: 100px;
+    background-repeat: repeat;
+    background-position: relative;
+    z-index: -100;
+    background-attachment: fixed;
 }
 
 
@@ -144,6 +146,8 @@ main {
 .category-section {
     text-align: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .category-section img {
@@ -313,7 +317,6 @@ main {
 
 .grid-container {
     width: 100%;
-    z-index: -3;
     max-width: 1246px;
     background-color: #212121;
     margin: auto;
