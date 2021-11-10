@@ -1,29 +1,3 @@
-@font-face {
-    font-family: 'nulshock';
-    src: url(../fonts/nulshock\ bd.ttf);
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/Montserrat-Regular.ttf);
-}
-
-h1, h2 {
-    font-family: 'nulshock';
-    font-size: 24px;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    display: block;
-}
 
 
 /* HEADER */
@@ -31,7 +5,6 @@ body {
 .nav-header {
     height: fit-content;
     background-color: #000812;
-    width: 100%;
     padding: 10px;
 }
 
@@ -109,32 +82,28 @@ body {
     display: block;
 }
 
-
 /* MAIN */
 
 main {
+    min-height: 100vh;
     background-image: url(/images/background-img.jpg);
-    background-size: 100%;
-    background-position-y: 100px;
-    background-repeat: repeat;
-    background-position: relative;
-    z-index: -100;
-    background-attachment: fixed;
+    background-size: cover;
     padding-bottom: 80px;
+    background-attachment: fixed;
+    background-position-y: 100px;
 }
 
-.main-container {
-    position: relative;
+.content-container {
+    width: 100%;
+    max-width: 1246px;
     margin: auto;
     background-color: #212121;
-    max-width: 1246px;
     border-radius: 30px;
     height: 900px;
-    box-shadow: inset 0px 0px 20px 5px black;
+    box-shadow: inset 0px 0px 20px black;
 }
 
-
-.breadcrumbs-contact {
+.breadcrumbs-login {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -149,32 +118,35 @@ main {
     margin: -20px -20px;
 }
 
-.breadcrumbs-contact a {
+.breadcrumbs-login a {
     color: cyan;
     padding: 10px;
 }
 
-.text-section {
+.content-container h1 {
+    padding: 80px 0px 40px;
     text-align: center;
-    color: white;
-    padding: 80px 10px 40px;
 }
 
-.text-section p {
-    font-family: 'Montserrat';
-    padding: 20px 0px 0px;
-    display: inline-block;
-}
-
-.form-section {
+.input-wrap {
     display: block;
     flex-direction: column;
-    margin: auto;
     width: 90%;
     max-width: 600px;
+    margin: auto;
+    height: fit-content;
 }
 
-.info-input {
+.input-wrap a {
+    display: block;
+}
+
+.input-wrap #signed-in-checkbox, .signed-in-label {
+    text-transform:initial;
+    margin: 12px 0px 12px;
+}
+
+#email, #password, #name, #password-2 {
     display: block;
     margin: 24px auto;
     height: 48px;
@@ -183,47 +155,41 @@ main {
     box-shadow: inset 0px 0px 5px 2px black;
 }
 
-#textarea {
-    resize: none;
-    display: block;
-    width: 100%;
-    height: 200px;
-    max-height: 200px;
+.button-section {
+    width: 90%;
+    max-width: 600px;
     margin: auto;
-    border-radius: 20px;
-    box-shadow: inset 0px 0px 5px 2px black;
-}
-
-.form-section ::placeholder {
-    padding: 10px 30px 0px;
-}
-
-.submit-button {
-    padding: 16px 120px;
-    margin: 40px auto;
     display: flex;
-    color: #D95F23;
-    background-color: #d960237a;
-    border-radius: 20px;
+    flex-direction: column;
+    text-align: center;
 }
 
+.button-section button {
+    height: 48px;
+    width: 100%;
+    margin-top: 24px;
+    border-radius: 10px;
+}
 
+.button-section h2 {
+    padding-top: 24px;
+}
 
 /* MEDIA QUERIES */
-
-
-@media (max-width: 350px) {
-    .account-icon, .cart-icon {
-        margin: 0px;
-         
-    }
-}
 
 @media (max-width: 700px) {
     #search {
         order: 6;
         width: 100%;
         margin: 10px auto 10px;
+         
+    }
+}
+
+
+@media (max-width: 350px) {
+    .account-icon, .cart-icon {
+        margin: 0px;
          
     }
 }

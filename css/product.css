@@ -1,6 +1,5 @@
 
-
-/* HEADER */
+/* NAV */
 
 .nav-header {
     height: fit-content;
@@ -84,13 +83,11 @@
 
 /* MAIN */
 
+
 main {
     min-height: 100vh;
-    background-image: url(/images/background-img.jpg);
-    background-size: cover;
-    padding-bottom: 80px;
-    background-attachment: fixed;
-    background-position-y: 100px;
+    background-color: black;
+    background-image: url(../);
 }
 
 .content-container {
@@ -99,11 +96,11 @@ main {
     margin: auto;
     background-color: #212121;
     border-radius: 30px;
-    height: 900px;
+    height: 100vh; /* change this later */
     box-shadow: inset 0px 0px 20px black;
 }
 
-.breadcrumbs-login {
+.breadcrumbs-product {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -118,77 +115,92 @@ main {
     margin: -20px -20px;
 }
 
-.breadcrumbs-login a {
-    color: cyan;
-    padding: 10px;
-}
-
-.content-container h1 {
-    padding: 80px 0px 40px;
-    text-align: center;
-}
-
-.input-wrap {
-    display: block;
-    flex-direction: column;
-    width: 90%;
-    max-width: 600px;
+.flex-wrap {
+    display: grid;
+    width: 80%;
     margin: auto;
-    height: fit-content;
+    padding-top: 80px;
+    grid-template-areas: 
+    'image-container product-information'
+    'condition-option add-to-cart';
+    gap: 30px;
 }
 
-.input-wrap a {
-    display: block;
-}
-
-.input-wrap #signed-in-checkbox, .signed-in-label {
-    margin: 12px 0px 12px;
-}
-
-#email, #password {
-    display: block;
-    margin: 24px auto;
-    height: 48px;
-    width: 100%;
+.image-container {
+    grid-area: image-container;
+    background-color: grey;
     border-radius: 20px;
-    box-shadow: inset 0px 0px 5px 2px black;
-}
-
-.button-section {
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: center;
 }
 
-.button-section button {
-    height: 48px;
+.image-container img {
+    width: 50%;
+    padding: 20px;
+}
+
+.product-information {
+    grid-area: product-information;
+}
+
+.condition-option {
+    grid-area: condition-option;
+}
+
+.add-to-cart {
+    grid-area: add-to-cart;
+}
+
+.product-image-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.in-game-images {
+    border-radius: 30px;
     width: 100%;
-    margin-top: 24px;
-    border-radius: 10px;
 }
 
-.button-section h2 {
-    padding-top: 24px;
+/* ADD TO FAVORITES */
+
+.heart-icon-unchecked {
+    width: 30px;
+    display: inline;
 }
 
-/* MEDIA QUERIES */
+.heart-icon-checked {
+    width: 30px;
+    display: none;
+}
 
-@media (max-width: 700px) {
-    #search {
-        order: 6;
-        width: 100%;
-        margin: 10px auto 10px;
-         
-    }
+#add-to-favorites {
+    display: none;
+}
+
+#add-to-favorites:checked + .heart-icon-unchecked {
+    display: none;
+}
+
+#add-to-favorites:checked + .heart-icon-checked {
+    display: block;
+}
+
+/* RATING */
+
+.product-rating {
+    display: block;
+}
+
+.product-rating p {
+    display: inline;
+    color: white;
+}
+
+/* PRICE */ 
+
+.price p {
+    display: block;
 }
 
 
-@media (max-width: 350px) {
-    .account-icon, .cart-icon {
-        margin: 0px;
-         
-    }
-}
