@@ -58,20 +58,23 @@
                         <div><img class="in-game-images" src="/images/in-game-image-2.jpg" alt="In-game image"></div>
                         <div><img class="in-game-images" src="/images/in-game-image-3.jpg" alt="In-game image"></div>
                     </div>
-                    <h2>Assassin - Playbox</h2>
-                    <p>Be a ninja. Throw ninja stars, fight with ninja blades. What more can you want</p>
+                    <h1>Assassin - Playbox</h1>
+                    <p class="product-text">Be a ninja. Throw ninja stars, fight with ninja blades. What more can you want</p>
                     <label for="add-to-favorites" alt="heart-icon"><img class="heart-icon-unchecked" src="/images/heart-unchecked.svg" alt="heart icon"></div><img class="heart-icon-checked" src="/images/heart-solid.svg" alt="heart icon">Add to favorites</label>
                     <input type="checkbox" name="add-to-favorites" id="add-to-favorites">
                     <div class="product-rating">
                         <img src="/images/stars.svg" alt="5 stars">
                         <p>4.9</p>
                     </div>
-                    <p class="price">30$</p>
+                    <p><span class="price">30$</span></p>
                 </section>
                 <div class="condition-option">
-                    <button>New</button>
-                    <button>Pre owned</button>
-                    <button>Digital</button>
+                    <input type="radio" name="radio" id="condition-new">
+                    <label class="condition-new" for="condition-new">New</label>
+                    <input type="radio" name="radio" id="condition-pre-owned">
+                    <label for="condition-pre-owned">Pre owned</label>
+                    <input type="radio" name="radio" id="condition-digital">
+                    <label for="condition-digital">Digital</label>
                 </div>
                 <a class="add-to-cart" href=""><button>Add to cart</button></a>
             </section>
