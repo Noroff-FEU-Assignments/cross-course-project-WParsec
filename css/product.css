@@ -236,7 +236,7 @@ h1 {
 }
 
 .condition-option label {
-    padding: 8px;
+    padding: 16px;
     border: 1px solid cyan;
     border-radius: 16px;
     width: 15%;
