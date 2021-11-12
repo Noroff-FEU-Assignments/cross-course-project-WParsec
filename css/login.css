@@ -154,6 +154,8 @@ main {
     box-shadow: inset 0px 0px 5px 2px black;
 }
 
+/* BUTTONS */
+
 .button-section {
     width: 90%;
     max-width: 600px;
@@ -163,11 +165,60 @@ main {
     text-align: center;
 }
 
-.button-section button {
-    height: 48px;
+.button-section .button-orange {
+    border: none;
+    background: none;
+    color: rgb(231, 94, 31);
+    position: relative;
+    z-index: -1;
+}
+
+.continue, .create-account {
+    padding: 16px 0px;
     width: 100%;
     margin-top: 24px;
     border-radius: 10px;
+    border: #cc461d 2px solid;
+    box-shadow: inset 0px 0px 16px #cc461daf;
+    position: relative;
+    z-index: 1;
+}
+
+.button-section .continue:hover, .create-account:hover {
+    box-shadow: inset 0px 0px 30px #cc461d;
+}
+
+.continue:active, .create-account:active {
+    filter: drop-shadow(0px 0px 20px #cc461d);
+    transform: scale(0.9);
+}
+
+.button-blue {
+    border: none;
+    background: none;
+    color: white;
+    position: relative;
+    z-index: -1;
+}
+
+.facebook {
+    padding: 16px 0px;
+    width: 100%;
+    margin-top: 24px;
+    border-radius: 10px;
+    border: #3b5998 2px solid;
+    box-shadow: inset 0px 0px 16px #3b5998;
+    position: relative;
+    z-index: 1;
+}
+
+.facebook:hover {
+    box-shadow: inset 0px 0px 30px #3b5998;
+}
+
+.facebook:active {
+    filter: drop-shadow(0px 0px 20px #3b5998);
+    transform: scale(0.9);
 }
 
 .button-section h2 {

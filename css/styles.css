@@ -86,9 +86,110 @@ button {
     padding-top: 33px;
 }
 
+/* NAV */
+
+.nav-header {
+    height: fit-content;
+    background-color: #000812;
+    padding: 10px;
+}
+
+.nav-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1266px;
+    margin: auto;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.account-icon {
+    order: 4;
+    margin-left: 20px;
+}
+
+.account-icon img, .cart-icon img {
+    padding: 10px 10px;
+}
+
+.cart-icon {
+    order: 5;
+    margin-right: 10px;
+
+}
+
+#search {
+    order: 4;
+    width: 45%;
+    text-align: center;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: -5px;
+}
+
+.wrap-hamburger-nav {
+    position: stick;
+    order: 1;
+}
+
+.logo-wrap {
+    order: 2;
+}
+
+.hamburger-nav {
+    display: none;
+    position: absolute;
+    background-color: #000812;
+    width: 60%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    border: solid 1px cyan;
+    z-index: 100;
+}
+
+.hamburger-nav a {
+    display: block;
+    width: 100%;
+    padding: 24px 0px;
+    border-radius: 20px;
+}
+
+.hamburger-nav a:hover {
+    background-color: rgba(0, 255, 255, 0.144);
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked + .hamburger-nav {
+    display: block;
+}
 
 
+/* BUTTONS */
 
+.create-account {
+    padding: 16px 0px;
+    width: 100%;
+    margin-top: 24px;
+    border-radius: 10px;
+    border: #cc461d 2px solid;
+    box-shadow: inset 0px 0px 16px #cc461daf;
+    position: relative;
+    z-index: 1;
+}
+
+.create-account:hover, .submit-button:hover {
+    box-shadow: inset 0px 0px 30px #cc461d;
+}
+
+.create-account:active .submit-button:active {
+    filter: drop-shadow(0px 0px 20px #cc461d);
+    transform: scale(0.9);
+}
 
 
 /* HOVER */
@@ -108,6 +209,10 @@ button {
 .hamburger-img:hover {
     filter: drop-shadow(0px 0px 10px rgba(0, 255, 255, 0.589));
 }
+
+
+
+
 
 
 

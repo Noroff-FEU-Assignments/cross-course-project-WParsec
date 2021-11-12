@@ -200,11 +200,17 @@ main {
 
 .submit-button {
     padding: 16px 120px;
-    margin: 40px auto;
-    display: flex;
-    color: #D95F23;
-    background-color: #d960237a;
-    border-radius: 20px;
+    width: 100%;
+    margin-top: 40px;
+    background: none;
+    color: #cc461d;
+    border-radius: 10px;
+    border: #cc461d 2px solid;
+    box-shadow: inset 0px 0px 16px #cc461daf;
+}
+
+.submit-button:hover {
+    cursor: pointer;
 }
 
 

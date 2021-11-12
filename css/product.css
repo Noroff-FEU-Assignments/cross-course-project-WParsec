@@ -267,16 +267,30 @@ h1 {
 
 /* BUTTON */
 
-.add-to-cart-button {
+button {
     border: none;
     background: none;
+    color: white;
+    width: 100%;
+    background-color: #cc461d;
+    height: 56px;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    
 }
 
 .add-to-cart {
-    background-color: #D95F23;
-    text-align: center;
-    padding: 20px;
-    margin-top: 36px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #cc371d;
+}
+
+button:active {
+    transform: scale(0.9);
 }
 
 /* MORE LIKE THIS */ 
@@ -302,8 +316,9 @@ h1 {
 }
 
 .more-like-this-images img {
-    width: 70%;
+    width: 80%;
     max-width: 300px;
+    border-radius: 12px;
 }
 
 /* MEDIA QUERIES */ 
@@ -319,6 +334,9 @@ h1 {
     .flex-wrap {
         display: flex;
         flex-direction: column;
+    }
+    .add-to-cart {
+        padding: 0px;
     }
 }
 
