@@ -65,12 +65,15 @@ main h1, h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 80px;
 }
 
 .input-wrap {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     max-width: 400px;
     margin: auto;
 }
@@ -78,7 +81,7 @@ main h1, h2 {
 .payment-wrap {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     max-width: 400px;
     margin: 0px auto;
     
@@ -115,7 +118,7 @@ main h1, h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    padding: 72px;
+    padding: 72px 72px 0px 72px;
 }
 
 .product-section {
@@ -130,10 +133,6 @@ main h1, h2 {
 
 .cart-product-image img {
     max-width: 136px;
-}
-
-h2 {
-    margin-bottom: 10px;
 }
 
 .info-p p {
@@ -178,19 +177,26 @@ h2 {
     margin: auto;
 }
 
+.payment-wrap a {
+    text-align: center;
+    padding-top: 40px;
+}
+
 button {
     border: none;
     background: none;
-    color: white;
+    color: black;
+    font-weight: 1000;
     width: 80%;
-    background-color: #cc461d;
+    background-color: #cc721d;
     height: 56px;
     margin-bottom: 40px;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #cc371d;
+    background-color: #cc951d;
+    filter: drop-shadow(0px 0px 10px #cc951d);
 }
 
 button:active {
