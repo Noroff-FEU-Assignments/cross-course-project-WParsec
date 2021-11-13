@@ -7,7 +7,7 @@
     <title>Checkout | Gamehub</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/imports/links.css">
-    <link rel="stylesheet" href="/css/checkout.css">
+    <link rel="stylesheet" href="/css/payment.css">
 </head>
 <body>
     <header class="nav-header">
@@ -45,13 +45,34 @@
     <main>
         <section class="content-container">
             <div class="breadcrumbs-checkout">
-                <a href="/index.html">Home</a><a href="#">All games</a><a href="/product.html">Product</a>
+                <a href="/index.html">Home</a><a href="/product.html">Product</a><a href="/checkout.html">Checkout</a>
             </div>
+            
+            <section class="form-wrap">
+                <section class="input-wrap">
+                    <h1>Shipping details</h1>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <input type="text" name="address" id="address" placeholder="address">
+                    <input type="number" name="zip" id="zip" placeholder="ZIP code">
+                    <input type="text" name="city" id="city" placeholder="City">
+                    <input type="number" name="tel" id="tel" placeholder="Phone number">
+                </section>
+                <section class="payment-wrap">
+                    <h2>Pay with</h2>
+                    <input type="number" name="card-number" id="card-number" placeholder="Card number">
+                    <input type="text" name="cardholder-name" id="cardholder-name" placeholder="Cardholder name">
+                    <div class="expiry-cvc">
+                    <input type="date" name="expiry" id="expiry" placeholder="Expiry date">
+                    <input type="number" name="CVC" id="cvc" placeholder="CVC">
+                    </div>
+                </section>
+            </section>
             <div class="grid-wrap">
                 <section class="product-section">
                     <div class="cart-product-image"><img src="/images/cover-1.svg" alt="Cover of Assassin"></div>
                     <div class="product-info">
-                        <h2>Assassin - Playbox</h2>
+                        <h3>Assassin - Playbox</h3>
                         <div class="rating">
                             <img class="star-icons" src="/images/stars.svg" alt="5 stars">
                             <p class="4point9">4.9</p>
@@ -63,13 +84,13 @@
                         </div>
                 </section>
                 <section class="order-summary">
-                    <h1>Order summary</h1>
+                    <h3>Order summary</h3>
                     <div class="summary">
                         <div class="summary-value"><p>Subtotal</p><p>30$</p></div>
                         <div class="summary-value"><p>Shipping</p><p><span>Free</span></p></div>
                         <div class="summary-value"><p>Total</p><p>30$</p></div>
                     </div>
-                    <a href="/payment.html"><button>Checkout</button></a>
+                    <a href="#"><button>Place order</button></a>
                 </section>
             </div>
         </section>
