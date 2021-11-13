@@ -87,7 +87,10 @@
 main {
     min-height: 100vh;
     background-color: black;
-    background-image: url(../);
+    background-image: url(/images/product-background-1.jpg), url(/images/product-background-2.jpg);
+    background-size: 35%, 25%;
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -250px, 1300px;
 }
 
 .content-container {
