@@ -175,7 +175,7 @@ h1 {
     padding-right: 4px;
 }
 
-ul {
+.options ul {
     font-family: 'Montserrat';
     color: cyan;
     background-color: #000812;
