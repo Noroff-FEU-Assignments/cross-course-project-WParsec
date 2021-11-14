@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A summary of your orders on Gamehub"/>
-    <title>Gamehub | Checkout</title>
+    <meta name="description" content="Your account on gamehub"/>
+    <title>Gamehub | Account</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/imports/links.css">
-    <link rel="stylesheet" href="/css/checkout.css">
+    <link rel="stylesheet" href="/css/account.css">
 </head>
 <body>
     <header class="nav-header">
@@ -46,31 +46,20 @@
     <main>
         <section class="content-container">
             <div class="breadcrumbs-checkout">
-                <a href="/index.html">Home</a><a href="#">All games</a><a href="/product.html">Product</a>
+                <a href="/index.html">Home</a><a href="/account.html">Account</a>
             </div>
-            <div class="grid-wrap">
-                <section class="product-section">
-                    <div class="cart-product-image"><img src="/images/cover-1.svg" alt="Cover of Assassin"></div>
-                    <div class="product-info">
-                        <h2>Assassin - Playbox</h2>
-                        <div class="rating">
-                            <img class="star-icons" src="/images/stars.svg" alt="5 stars">
-                            <p class="4point9">4.9</p>
-                        </div>
-                        <div class="info-p">
-                            <p>30$</p>
-                            <p>Digital</p>
-                            <p>Edition: Standard</p>
-                        </div>
+            <h1>Account</h1>
+            <div class="flex-container">
+                <section class="user">
+                    <img src="/images/profile-img.jpg" alt="Profile picture">
+                    <p class="name">Patrick</p>
+                    <p>Member since Jan. 3. 2009</p>
+                    <a class="edit-profile" href="#">Edit profile</a>
                 </section>
-                <section class="order-summary">
-                    <h1>Order summary</h1>
-                    <div class="summary">
-                        <div class="summary-value"><p>Subtotal</p><p>30$</p></div>
-                        <div class="summary-value"><p>Shipping</p><p><span>Free</span></p></div>
-                        <div class="summary-value"><p>Total</p><p>30$</p></div>
-                    </div>
-                    <a href="/payment.html"><button>Checkout</button></a>
+                <section class="options">
+                    <ul class="my-listings">My listings <span>></span></ul>
+                    <ul class="favorites">My favorites <span>></span></ul>
+                    <button class="log-out">Log out</button>
                 </section>
             </div>
         </section>

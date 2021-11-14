@@ -155,6 +155,10 @@ main {
     box-shadow: inset 0px 0px 5px 2px black;
 }
 
+::placeholder {
+    padding-left: 20px;
+}
+
 .button-section {
     width: 90%;
     max-width: 600px;

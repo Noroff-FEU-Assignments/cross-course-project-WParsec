@@ -112,6 +112,10 @@ main h1, h2 {
         box-shadow: inset 0px 0px 5px 2px black;
 }
 
+::placeholder {
+    padding-left: 20px;
+}
+
 /* GRID */
 
 .grid-wrap {

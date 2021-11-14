@@ -1,6 +1,9 @@
-
-
-/* HEADER */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: auto 1fr auto;
+}
 
 .nav-header {
     height: fit-content;
@@ -82,10 +85,10 @@
     display: block;
 }
 
-/* MAIN */
 
 main {
     min-height: 100vh;
+    background-color: black;
     background-image: url(/images/background-img.jpg);
     background-size: cover;
     padding-bottom: 80px;
@@ -103,7 +106,9 @@ main {
     box-shadow: inset 0px 0px 20px black;
 }
 
-.breadcrumbs-login {
+/* BREADCRUMBS */ 
+
+.breadcrumbs-checkout {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -118,116 +123,78 @@ main {
     margin: -20px -20px;
 }
 
-.breadcrumbs-login a {
+.breadcrumbs-checkout a {
     color: cyan;
     padding: 10px;
 }
 
-.content-container h1 {
-    padding: 80px 0px 40px;
+/* CONTENT */
+
+h1 {
     text-align: center;
+    padding-top: 80px;
 }
 
-.input-wrap {
-    display: block;
-    flex-direction: column;
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
-    height: fit-content;
-}
-
-.input-wrap a {
-    display: block;
-}
-
-.input-wrap #signed-in-checkbox, .signed-in-label {
-    margin: 12px 0px 12px;
-}
-
-#email, #password {
-    display: block;
-    margin: 24px auto;
-    height: 48px;
+.flex-container {
+    display: flex;
+    flex: 1fr 1fr;
+    justify-content: space-evenly;
     width: 100%;
-    border-radius: 20px;
-    border: none;
-    box-shadow: inset 0px 0px 5px 2px black;
-}
-
-::placeholder {
-    padding-left: 20px;
-}
-
-/* BUTTONS */
-
-.button-section {
-    width: 90%;
-    max-width: 600px;
     margin: auto;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    gap: 40px;
+}
+
+.user {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 15%;
+    min-width: 100px;
+    margin: 0px auto;
+}
+
+.name {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.flex-container p {
+    padding: 10px 0px 10px;
+}
+
+.options {
+    width: 80%;
+    max-width: 400px;
     text-align: center;
+    padding-right: 4px;
 }
 
-.button-section .button-orange {
-    border: none;
-    background: none;
-    color: rgb(231, 94, 31);
-    position: relative;
-    z-index: -1;
-}
-
-.continue, .create-account {
-    padding: 16px 0px;
+ul {
+    font-family: 'Montserrat';
+    color: cyan;
+    background-color: #000812;
     width: 100%;
-    margin-top: 24px;
-    border-radius: 10px;
-    border: #cc461d 2px solid;
-    box-shadow: inset 0px 0px 16px #cc461daf;
-    position: relative;
-    z-index: 1;
+    padding: 20px 0px;
+    margin-bottom: 20px;
 }
 
-.button-section .continue:hover, .create-account:hover {
-    box-shadow: inset 0px 0px 30px #cc461d;
-}
 
-.continue:active, .create-account:active {
-    filter: drop-shadow(0px 0px 20px #cc461d);
-    transform: scale(0.9);
-}
-
-.button-blue {
+button {
     border: none;
-    background: none;
-    color: white;
-    position: relative;
-    z-index: -1;
-}
-
-.facebook {
-    padding: 16px 0px;
+    height: 56px;
     width: 100%;
-    margin-top: 24px;
-    border-radius: 10px;
-    border: #3b5998 2px solid;
-    box-shadow: inset 0px 0px 16px #3b5998;
-    position: relative;
-    z-index: 1;
+    background-color: #000812;
+    color: cyan;
 }
 
-.facebook:hover {
-    box-shadow: inset 0px 0px 30px #3b5998;
-}
-
-.facebook:active {
-    filter: drop-shadow(0px 0px 20px #3b5998);
-    transform: scale(0.9);
-}
-
-.button-section h2 {
-    padding-top: 24px;
+button:hover {
+    cursor: pointer;
 }
 
 /* MEDIA QUERIES */
